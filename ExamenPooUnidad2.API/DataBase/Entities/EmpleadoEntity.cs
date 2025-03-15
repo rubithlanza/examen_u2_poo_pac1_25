@@ -31,11 +31,11 @@ namespace ExamenPooUnidad2.API.DataBase.Entities
 
         [Column("departamento")]
 
-        public DateTime Departamento { get; set; }
+        public string Departamento { get; set; }
 
         [Column("puesto_trabajo")]
 
-        public DateTime PuestoTrabajo { get; set; }
+        public string PuestoTrabajo { get; set; }
 
         [Column("salario")]
 

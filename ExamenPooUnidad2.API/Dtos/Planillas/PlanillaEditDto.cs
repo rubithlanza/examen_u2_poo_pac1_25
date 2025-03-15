@@ -1,6 +1,6 @@
 ﻿namespace ExamenPooUnidad2.API.Dtos.Planillas
 {
-    public class PlanillaEditDto
+    public class PlanillaEditDto : PlanillaCreateDto
     {
     }
 }

@@ -5,7 +5,20 @@ meta {
 }
 
 put {
-  url: {{Path-Pago}}/
-  body: none
+  url: {{Path-Pago}}/empleados/AF3678EC-E119-423E-BDA6-65CE50D70016
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "nombre": "Karla / editar",
+    "apellido": "Lopez",
+    "documento": "0401200100345",
+    "fechaContratacion": "2025-02-01",
+    "departamento": "Ventas",
+    "puestoTrabajo": "Servivcio al cliente",
+    "salario": 20000,
+    "activo": true
+  }
 }

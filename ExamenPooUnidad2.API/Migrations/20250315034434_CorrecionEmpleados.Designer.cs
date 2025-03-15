@@ -3,6 +3,7 @@ using System;
 using ExamenPooUnidad2.API.DataBase;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ExamenPooUnidad2.API.Migrations
 {
     [DbContext(typeof(PagoPlanillasDbContext))]
-    partial class PagoPlanillasDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250315034434_CorrecionEmpleados")]
+    partial class CorrecionEmpleados
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");

@@ -6,6 +6,23 @@ meta {
 
 post {
   url: {{Path-Pago}}/empleados
-  body: none
+  body: json
   auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nombre": "Karla",
+    "apellido": "Lopez",
+    "documento": "0401200100345",
+    "fechaContratacion": "2025-02-01",
+    "departamento": "Ventas",
+    "puestoTrabajo": "Servivcio al cliente",
+    "salario": 20000,
+    "activo": true
+  }
 }
